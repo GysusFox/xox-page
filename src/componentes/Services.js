@@ -8,7 +8,7 @@ function Service(props){
                 <h4>{props.title}</h4>
             </div>
             <div className="serviceContent">
-                <p>{props.info}</p>
+                {/* <p>{props.info}</p> */}
             </div>
         </div>
     )
