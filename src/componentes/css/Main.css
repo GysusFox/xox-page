@@ -1,0 +1,174 @@
+:root
+{
+    --title: 2rem;
+    --subtitle: 1.5rem;
+    --text: 1rem;
+
+    --fadeColor: rgba(255, 255, 255, 0.212);
+    --fadeColorLight: rgba(0, 0, 0, 0.411);
+    --blurGlass: blur(3px);
+}
+
+/* LOGO XOX */
+
+.logoXOX{
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(39, 39, 39, 0.13);
+    backdrop-filter: var(5px);
+    border: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    box-shadow: 0px 0px 15px 2px black;
+    border-radius: 15px; */
+}
+
+.logoXOX img{
+    width: 350px;
+}
+
+/* INICIO */
+.inicio{
+    width: 100%;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.inicio .text
+{
+    width: 400px;
+    margin: 50px 0px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fadeColorLight);
+    backdrop-filter: var(--blurGlass);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px var(--fadeColor);
+
+}
+
+@media (max-width: 850px)
+{
+    .incio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inicio .text
+    {
+        width: 400px;
+        margin: 50px 50px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 450px)
+{
+    .inicio .text{
+        width: 350px;
+    }
+}
+@media (max-width: 350px)
+{
+    .inicio .text{
+        width: 310px;
+    }
+}
+
+.inicio .title{
+    font-size: var(--title);
+    color: white;
+}
+
+.inicio .content
+{
+    font-size: var(--text);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.inicio .content .contentGuest{
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    color: rgb(255, 255, 255);
+}
+
+.inicio .image{
+    display: flex;
+    
+    margin: 50px 50px;
+    
+}
+
+.inicio .image .marco
+{
+    width: 350px;
+    height: 450px;
+    display: flex;
+    /*background-image: url(../../IMG/IMG1.jpg);*/
+    border: 3px solid rgba(0, 0, 0, 0.575);
+    border-radius: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: marco 3s infinite;
+    justify-content: center;
+    align-items: center;
+} 
+
+@keyframes marco{
+    0%{
+        box-shadow: 0px 0px 30px 5px var(--fadeColorLight) inset;
+    }
+    45%{
+        box-shadow: 0px 0px 30px 5px var(--fadeColor) inset;
+    }
+    75%{
+        box-shadow: 0px 0px 30px 5px var(--fadeColor) inset;
+    }
+
+    100%{
+        box-shadow: 0px 0px 30px 5px var(--fadeColorLight) inset;
+    }
+}
+
+.inicio .image .marco .img{
+    width: 280px;
+    height: 380px;
+    background: url(./../../IMG/marco.jpg);
+    background-position: top;
+    background-size: cover;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio .image .marco .img h4{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 2px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.288);
+}
+

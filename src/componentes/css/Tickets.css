@@ -1,0 +1,363 @@
+.contenedorTickets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+@media (max-width: 750px) {
+    .contenedorTickets{
+        flex-direction: column;
+    }
+}
+
+.ticketsCompra 
+{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.288);
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 750px) {
+    .ticketsCompra{
+        margin-bottom: 100px;
+    }
+}
+
+.ticketsCompra div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: gray;*/
+}
+
+.ticketsCompra .title{
+    border-top: 1px solid rgba(255, 255, 255, 0.226);
+}
+.ticketsCompra .title h4{
+    margin: 10px 0px;
+    color: rgb(223, 223, 223);
+    font-size: 20px;
+}
+
+.ticketsCompra .lugar{
+    cursor: pointer;
+}
+.ticketsCompra .metodoPago{
+    cursor: pointer;
+}
+
+.ticketsCompra .lugar .btnOption h4{
+    position: relative;
+    
+}
+
+.ticketsCompra .lugar .inactive h4::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 2px;
+    left: -80px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+.ticketsCompra .lugar .inactive h4::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 2px;
+    left: 110px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+.ticketsCompra .lugar .active h4::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 8px;
+    left: -80px;
+    transform: rotate(135deg);
+    transition: 0.5s;
+}
+.ticketsCompra .lugar .active h4::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 8px;
+    left: 110px;
+    transform: rotate(135deg);
+    transition: 0.5s;
+}
+
+.ticketsCompra .lugar .option{
+    display: flex;
+    position: relative;
+}
+
+.ticketsCompra .lugar .option input{
+    appearance: none;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+    position: relative;
+}
+
+.ticketsCompra .lugar .option input:hover{
+    background-color: rgb(134, 134, 134);
+}
+
+.ticketsCompra .lugar .option input:checked{
+    background-color: rgb(134, 134, 134);
+}
+
+.ticketsCompra .lugar .option label{
+    display: block;
+    position: absolute;
+    color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.ticketsCompra .on .contenedorOption{
+    color: black;
+    transition: 0.5s;
+}
+
+.ticketsCompra .off .contenedorOption{
+    display: block;
+    position: relative;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0; /* sólo en caso de elementos inline-block */
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+
+/*===============PAGO==============*/
+.ticketsCompra .metodoPago .btnOption h4{
+    position: relative;
+}
+.ticketsCompra .metodoPago .inactive h4::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 6px;
+    left: -45px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+.ticketsCompra .metodoPago .inactive h4::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 6px;
+    right: -45px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+.ticketsCompra .metodoPago .active h4::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 11px;
+    left: -35px;
+    transform: rotate(135deg);
+    transition: 0.5s;
+}
+.ticketsCompra .metodoPago .active h4::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 11px;
+    right: -35px;
+    transform: rotate(135deg);
+    transition: 0.5s;
+}
+
+.ticketsCompra .metodoPago .option{
+    display: flex;
+    position: relative;
+}
+
+.ticketsCompra .metodoPago .option input{
+    appearance: none;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+    position: relative;
+}
+
+.ticketsCompra .metodoPago .option input:hover{
+    background-color: rgb(134, 134, 134);
+}
+
+.ticketsCompra .metodoPago .option input:checked{
+    background-color: rgb(134, 134, 134);
+}
+
+.ticketsCompra .metodoPago .option label{
+    display: block;
+    position: absolute;
+    color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+/*==========DETAIL=========*/
+
+.ticketsDetail 
+{ 
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.151); */
+    width: 350px;
+    height: auto;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.288);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+@media (max-width: 750px) {
+    .ticketsDetail{
+        margin-top: 80px;
+    }
+}
+
+.ticketsDetail .tituloPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticketsDetail .tituloPrincipal img{
+    width: 100%;
+}
+
+.ticketsDetail .tituloPrincipal h5{
+    padding: 10px;
+}
+
+/*  CANTIDAD  */
+
+.ticketsCompra .cantidad{
+    position: relative;
+}
+
+.ticketsCompra .cantidad input{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.295);
+    border: none;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    outline: none;
+}
+
+.ticketsCompra .cantidad input::placeholder{
+    color: black;
+}
+
+.ticketsCompra .cantidad .fa-minus{
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    left: 20px;
+    bottom: -1px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: ease .3s;
+}
+
+.ticketsCompra .cantidad .fa-minus:hover{
+    background-color: rgb(73, 73, 73);
+    border: 1px solid white;
+}
+.ticketsCompra .cantidad .fa-plus{
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    right: 20px;
+    bottom: -1px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: ease .3s;
+}
+
+.ticketsCompra .cantidad .fa-plus:hover{
+    background-color: rgb(73, 73, 73);
+    border: 1px solid white;
+}
+
+.ticketsCompra .cantidad h4{
+    margin: 5px;
+}
+
+/* BTN COMPRA */
+
+.ticketsCompra .btnCompra
+{
+    width: 100%;    
+}
+
+.ticketsCompra .btnCompra button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    background-color: rgb(1, 201, 1);
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.ticketsCompra .btnCompra button:hover{
+    background-color: rgb(0, 175, 0);
+    border: 2px solid rgba(255, 255, 255, 0.568);
+}

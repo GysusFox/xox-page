@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*===========BODY===========*/
+.App{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.411) inset;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#AppBlack{
+    background: url(./IMG/BACKGROUND.png);
+    background-size: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#AppMenu{
+    background: url(./IMG/MENU.png);
+    background-position: bottom;
 }
 
-.App-link {
-  color: #61dafb;
+#AppBackWhite{
+    background: url(./IMG/BACKGROUND2.png);
+    background-size: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*===========LOGO===========*/
+.logo{
+    display: flex;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+.logo h4{
+    color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    transform: skew(0deg, -4deg);
+    background: linear-gradient(90deg, rgb(0, 26, 255) 0%, rgb(0, 3, 196) 50%, rgb(13, 0, 201) 100%);
+}
+
+/*===========MENU=========*/
+.menu{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    flex-direction: column;
+    background-color: rgb(46, 46, 46);
+    /* border-top: 2px solid black; */
+    -webkit-box-shadow: 0 20px 50px 1px #000000;
+    box-shadow: 0 20px 50px 1px #000000;
+    z-index: 20;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+.content-menu{
+    width: 100%;
+    display: flex;    
+}
+
+.content-menu ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 5px 0px;
+}
+
+.content-menu ul li{
+    display: flex;
+    color: rgb(40, 185, 243);
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    list-style: none;
+}
+
+.content-menu ul li:hover{
+    color: rgb(255, 255, 255);
+    transform: rotateX(40deg) rotateY(-10deg);
 }

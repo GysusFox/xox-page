@@ -1,0 +1,53 @@
+.contentFooter{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(34, 34, 34);
+    margin-bottom: 45px;
+    border-top: 1px solid lightgray;
+    bottom: 0px;
+}
+
+.contentFooter .up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contentFooter .up .contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: white;
+}
+
+.contentFooter .up .redes
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;    
+}
+
+.contentFooter .up .redes a{
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.contentFooter .up .redes a:hover{
+    color: rgb(136, 136, 136);
+}
+
+.contentFooter .down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    border-top: 1px solid gray;
+}
