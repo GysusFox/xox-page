@@ -1,7 +1,7 @@
 {
   "name": "xox",
   "version": "0.1.0",
-  "homepage": "https://gysusfox.github.io/xox-page",
+  "homepage": "http://gysusfox.github.io/xox-page",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
