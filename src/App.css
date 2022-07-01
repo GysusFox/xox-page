@@ -25,6 +25,7 @@
 #AppMenu{
     background: url(./IMG/MENU.png);
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 #AppBackWhite{
